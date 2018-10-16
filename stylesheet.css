@@ -1,0 +1,68 @@
+body {
+background-repeat: no-repeat;
+background-position: center;
+background-color:black;
+background-attachment: center;
+background-size: cover;
+
+}
+
+img {
+   width: 200px;
+   position: center;
+}
+p {
+ color: white;
+ font-style:  normal;
+}
+h1 {
+ color: yellow;
+}
+
+.accordion {
+   background-color: #bbb;
+   color: #666;
+   cursor: pointer;
+   padding: 12px;
+   width: 9%;
+   text-align: center;
+}
+.panel {
+   padding:18px;
+   background-color: red;
+   display: none;
+}
+
+.size {
+ width: 350px;
+ float: inherit;
+ margin-right:30px;
+}
+.footpic {
+ width: 150px;
+ float: inherit;
+}
+.team {size: 100px;}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: aboutUs; }
+.item3 { grid-area: HCimage; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+ display: grid;
+ grid-template-areas:
+   'header header header header header header'
+   'aboutUs aboutUs aboutUs HCimage HCimage HCimage'
+   'footer footer footer footer footer footer';
+
+ background-color: #1111;
+ padding: 10px;
+}
+.grid-container > div {
+ /* background-color: rgba(255, 255, 255, 255); */
+ text-align: inherit;
+ padding: 20px 20px;
+ font-size: 15px;
+
+}
